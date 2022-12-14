@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+MONITOR=$1
+
+if [[ -z $MONITOR ]]; then
+  MONITOR=$(xrandr | egrep 'Virtual-[0-9] connected' | head -1 | cut -d ' ' -f 1)
+fi
+
+while true; do 
+  /usr/local/bin/xresize $MONITOR
+  sleep 1
+done
+

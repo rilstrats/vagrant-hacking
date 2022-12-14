@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+GenericName=Screen Resizer
+Name=xresize-loop
+Comment=Starts xresize-loop which will auto-resize the display.
+TryExec=xrandr
+Exec=/usr/local/bin/xresize-loop
+Terminal=false
+StartupNotify=false
