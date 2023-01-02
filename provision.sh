@@ -4,7 +4,7 @@
 timedatectl set-timezone America/Denver
 
 # update
-apt update -yqq; apt upgrade -yqq
+# apt update -yqq; apt upgrade -yqq
 
 # guest agents
 apt install -yqq qemu-guest-agent spice-vdagent
