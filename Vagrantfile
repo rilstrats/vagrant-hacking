@@ -7,6 +7,7 @@ Vagrant.configure('2') do |config|
     kali.vm.provision :shell, path: 'provision.sh'
     # end box creation
     # kali.vm.synced_folder "/home/rilstrats/nas/cyber", "/home/vagrant/cyber", type: "nfs"
+    kali.vm.synced_folder '.', '/vagrant', type: 'rsync'
     kali.vm.provider :libvirt do |lv|
       lv.cpus = 2
       lv.memory = 4096
