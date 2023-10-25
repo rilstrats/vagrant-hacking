@@ -8,6 +8,6 @@ fi
 
 while true; do 
   /usr/local/bin/xresize $MONITOR
-  sleep 1
+  sleep 5
 done
 
