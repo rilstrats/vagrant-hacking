@@ -9,8 +9,8 @@ Vagrant.configure('2') do |config|
     # kali.vm.synced_folder "/home/rilstrats/nas/cyber", "/home/vagrant/cyber", type: "nfs"
     kali.vm.synced_folder '.', '/vagrant', type: 'rsync'
     kali.vm.provider :libvirt do |lv|
-      lv.cpus = 2
-      lv.memory = 4096
+      lv.cpus = 4
+      lv.memory = 8192
       lv.video_vram = 256
     end
   end
